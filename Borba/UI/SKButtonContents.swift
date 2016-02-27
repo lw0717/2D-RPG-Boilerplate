@@ -8,11 +8,10 @@
 
 import SpriteKit
 
-class SKButtonContents : SKSpriteNode
-{
+class SKButtonContents : SKSpriteNode {
   var label : SKLabelNode?
-  init(color: UIColor, text: String)
-  {
+  
+  init(color: UIColor, text: String) {
     let labelNode : SKLabelNode = SKLabelNode(text: text);
     labelNode.fontName = "Copperplate"
     let labelFrame = labelNode.frame
@@ -23,25 +22,21 @@ class SKButtonContents : SKSpriteNode
     setup(labelNode)
   }
   
-  func setup(labelNode: SKLabelNode)
-  {
+  func setup(labelNode: SKLabelNode) {
     label = labelNode
     label!.position = CGPointMake(0, -Button.topMargin)
     addChild(label!)
     
   }
   
-  func setMargins(horizontal: Int, vertical: Int)
-  {
+  func setMargins(horizontal: Int, vertical: Int) {
     
   }
   
-  func changeText(text: String)
-  {
+  func changeText(text: String) {
   }
   
-  required init?(coder aDecoder: NSCoder)
-  {
+  required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
   }
 }

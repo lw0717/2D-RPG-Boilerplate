@@ -8,20 +8,18 @@
 
 import SpriteKit
 
-protocol SKButtonDelegate
-{
+protocol SKButtonDelegate {
   func buttonTapped(type: ButtonType)
   // button tapped function
   // !!! to-do: add property that holds the button action on tap?
 }
 
-class SKButton : SKSpriteNode
-{
+class SKButton : SKSpriteNode {
   var button: SKButtonContents?
   var buttonType: ButtonType?
   var delegate: SKButtonDelegate?
-  convenience init(color: UIColor, text: String, type: ButtonType)
-  {
+  
+  convenience init(color: UIColor, text: String, type: ButtonType) {
     let buttonNode = SKButtonContents(color: color, text: text)
 		let buttonWidth = buttonNode.frame.size.width + 50 // 50 is the invisible padding for tappable area
 		let buttonHeight = buttonNode.frame.size.height + 50

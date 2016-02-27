@@ -19,19 +19,18 @@ enum SoundFile {
   
 }
 
-struct ExpValues {
+enum ExpValues {
   static let enemy = 10.0
 }
 
-struct AnimationKeys {
+enum AnimationKeys {
   static let damage = "dmg"
   static let move = "move"
   static let damageEnemySound = "enemydamagesound"
   static let damagePlayerSound = "playerdamagesound"
 }
 
-struct ImageNames
-{
+enum ImageNames {
   static let mainMap = "ice"
 }
 
@@ -51,21 +50,18 @@ enum MapBitMasks: UInt32
   case Last = 4
 }
 
-struct Button
-{
+enum Button {
   static let leftMargin: CGFloat = 20
   static let rightMargin: CGFloat = 20
   static let topMargin: CGFloat = 10
   static let bottomMargin: CGFloat = 10
 }
-enum ButtonType: UInt32 // need to make MainMenu a type of ButtonType
-{
+enum ButtonType: UInt32 {// need to make MainMenu a type of ButtonType
   case MainMenuPlay = 1
   case MainMenuSettings = 2
 }
 
-struct zPositions
-{
+enum zPositions {
   static let map: CGFloat = 1
   static let mapObjects: CGFloat = 2
   static let joystick: CGFloat = 3
@@ -74,7 +70,7 @@ struct zPositions
   static let UIMenus: CGFloat = 6
 }
 
-struct thumbstickValues {
+enum thumbstickValues {
   static let maxAbsX: CGFloat = 70
   static let maxAbsY: CGFloat = 70
 }
@@ -85,8 +81,7 @@ func getRadiansBetweenTwoPoints(firstPoint: CGPoint, secondPoint: CGPoint) -> Do
   return Double(atan2(secondPoint.y - firstPoint.y, secondPoint.x - firstPoint.x)) + M_PI/2
 }
 
-func getRandomNumber(upperLimit: CGFloat) -> CGFloat
-{
+func getRandomNumber(upperLimit: CGFloat) -> CGFloat {
   return CGFloat(arc4random_uniform(UInt32(upperLimit + 1)))
 }
 

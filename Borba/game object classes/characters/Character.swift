@@ -6,15 +6,6 @@
 //  Copyright (c) 2015 Team Five Three. All rights reserved.
 //
 
-/* 
-Any character (enemy or player) has:
-- health
-- attack
-- defense
-- movement speed
-- items (not in playable demo)
-*/
-
 import SpriteKit
 
 class Character : GameObject {

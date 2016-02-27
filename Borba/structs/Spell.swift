@@ -48,8 +48,7 @@ struct Spell {
   var cost: Double
   var cooldown: Double
   
-  init(spellDamage: Double, spell : Name, spellCost: Double, spellCooldown: Double)
-  {
+  init(spellDamage: Double, spell : Name, spellCost: Double, spellCooldown: Double) {
     damage = spellDamage
     spellName = spell
     cost = spellCost

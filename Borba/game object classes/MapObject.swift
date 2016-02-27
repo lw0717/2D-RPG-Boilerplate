@@ -6,14 +6,6 @@
 //  Copyright (c) 2015 Team Five Three. All rights reserved.
 //
 
-/*
-Any map object has:
-- 
-
--obstacles **
-** not to be included in playable demo
-
-*/
 import SpriteKit
 
 class MapObject : GameObject {

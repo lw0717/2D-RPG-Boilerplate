@@ -8,16 +8,15 @@
 
 import SpriteKit
 
-class ExperienceBar: SKSpriteNode
-{
+class ExperienceBar: SKSpriteNode {
   var experienceMeter: SKSpriteNode = SKSpriteNode(texture: nil, color: UIColor.whiteColor(), size: CGSizeMake(192, 4))
+  
   init(width: CGFloat, height: CGFloat) {
     super.init(texture: nil, color: UIColor(red: 0.1, green: 0.1, blue: 0.1, alpha: 1), size: CGSizeMake(200, 6))
     setup(width, height: height)
   }
   
-  func setup(width: CGFloat, height: CGFloat)
-  {
+  func setup(width: CGFloat, height: CGFloat) {
     let yPos = height - size.height/2 - 16
     position = CGPointMake(160, yPos)
     zPosition = 10
@@ -39,8 +38,7 @@ class ExperienceBar: SKSpriteNode
     //experienceMeter.xScale = CGFloat(scale)
   }
   
-  required init?(coder aDecoder: NSCoder)
-  {
+  required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
   }
 }

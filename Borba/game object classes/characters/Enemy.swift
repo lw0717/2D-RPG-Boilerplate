@@ -6,12 +6,6 @@
 //  Copyright (c) 2015 Team Five Three. All rights reserved.
 //
 
-/*
-Any enemy has:
-- experience value
-- 
-*/
-
 import SpriteKit
 
 class Enemy : Character {

@@ -53,7 +53,7 @@ class SpellNode: GameObject {
       fireParticles.position = CGPointMake(0, 0)
       sprite.addChild(fireParticles)
       
-      // lightnode performance is really bad in iOS 9, disabled for now
+      // lightnode performance is really bad, disabled for now
 //      let lightNode = SKLightNode()
 //      lightNode.enabled = true
 //      lightNode.lightColor = SKColor.whiteColor()

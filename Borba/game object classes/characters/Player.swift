@@ -106,8 +106,6 @@ class Player : Character {
     //physicsBody?.dynamic = false
     physicsBody?.categoryBitMask = CategoryBitMasks.Hero.rawValue
     physicsBody?.collisionBitMask = CategoryBitMasks.Map.rawValue | CategoryBitMasks.Enemy.rawValue
-//    shadowCastBitMask = 1
-//    shadowedBitMask = 1
     
     setupLightSource()
   }
